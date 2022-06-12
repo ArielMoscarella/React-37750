@@ -1,7 +1,8 @@
 import React, {useState} from "react";
 import { Container, LogoContainer, Menu, MenuItem, MenuItemLink, MobileIcon, Wrapper } from "./Navbar.elements";
-import { FaBattleNet, FaBars, FaTimes, FaHome, FaUserAlt, FaBriefcase, FaGlasses, } from "react-icons/fa";
+import { FaBattleNet, FaBars, FaTimes, FaHome, FaUserAlt, FaBriefcase, FaGlasses, FaShoppingCart } from "react-icons/fa";
 import { IconContext } from "react-icons";
+import { Carrito, MenuItemLinkCart } from "./CartWidget";
 
 const Navbar = () => {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -58,6 +59,13 @@ const Navbar = () => {
                                     CONTACTANOS
                                 </div>
                             </MenuItemLink>
+                    </MenuItem>
+                    <MenuItem>
+                            <MenuItemLinkCart onClick = {() => setShowMobileMenu(!showMobileMenu)}>
+                                <div>
+                                    <FaShoppingCart />
+                                </div>
+                            </MenuItemLinkCart>
                     </MenuItem>
                 </Menu>
                 </IconContext.Provider>
