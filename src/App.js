@@ -1,8 +1,12 @@
 import Navbar from './components/Navbar/Navbar';
 import ItemListContainer from './components/Navbar/ItemListContainer';
+import ItemCount from './components/Navbar/ItemCount';
+
 
 
 function App() {
+ 
+
   return (
     <div>
       <Navbar/>

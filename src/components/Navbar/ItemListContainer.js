@@ -1,5 +1,6 @@
 import React from "react";
 import "./ItemListContainer.css";
+import ItemCount from "../Navbar/ItemCount";
 
 const ItemListContainer = ({ title, subtitle, especifications, price }) =>{
     return(
@@ -8,7 +9,10 @@ const ItemListContainer = ({ title, subtitle, especifications, price }) =>{
             <p>{subtitle}</p>
             <p>{especifications}</p>
             <p>{price}</p>
+            <br/>
+            <ItemCount/>
         </div>
+        
     )
 }
 
