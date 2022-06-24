@@ -1,19 +1,15 @@
 import React from "react";
-import "./ItemListContainer.css";
+import ItemList from "./ItemList";
 import ItemCount from "../Navbar/ItemCount";
 
-const ItemListContainer = ({ title, subtitle, especifications, price }) =>{
+
+export default function ItemListContainer() {
     return(
         <div>
-            <p>{title}</p>
-            <p>{subtitle}</p>
-            <p>{especifications}</p>
-            <p>{price}</p>
-            <br/>
+            <ItemList/>
             <ItemCount/>
         </div>
         
-    )
+    );
 }
 
-export default ItemListContainer;
