@@ -1,22 +1,23 @@
-import React, {} from "react";
+import React from "react";
 
-export default function ItemList({items}){
-    return(
-        <div>
-            {items.map((item, i) =>{
-                return(
-                    <div key={i}>
-                        <h1>{item.title}</h1>
-                    <div>
-                        <p>
-                            id{item.id} nombre {item.title} precio:{item.price}
-                        </p>
-                    </div>
-                    </div>
-                );
-            })}
-        </div>
-    );
+export default function ItemList({ productos }) {
+  return (
+    <div>
+      {productos.map((producto, i) => {
+        return (
+          <div key={i}>
+            <h1>{producto.name}</h1>
+            <div>
+              <p>
+                id {producto.id} nombre {producto.name} y el precio es:
+                {producto.price}
+              </p>
+              <br />
+              <br />
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
 }
-
-

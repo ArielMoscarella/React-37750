@@ -1,6 +1,6 @@
 import Navbar from './components/Navbar/Navbar';
 import ItemListContainer from './components/Navbar/ItemListContainer';
-
+import Item from './components/Navbar/Item';
 export default function App() {
  
 
@@ -8,6 +8,7 @@ export default function App() {
     <div>
       <Navbar/>
       <ItemListContainer/>
+      <Item/>
     </div>
   );
 }
